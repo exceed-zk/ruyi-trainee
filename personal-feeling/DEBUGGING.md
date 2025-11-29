@@ -1,0 +1,802 @@
+# Eclipse 插件调试指南
+
+本文档介绍如何在 Linux 环境下调试 RuyiSDK Eclipse 插件项目。
+
+## 📋 目录
+
+- [环境要求](#环境要求)
+- [快速开始](#快速开始)
+- [详细步骤](#详细步骤)
+- [调试技巧](#调试技巧)
+- [常见问题](#常见问题)
+- [故障排查](#故障排查)
+
+---
+
+## 环境要求
+
+### 必需软件
+
+| 软件 | 最低版本 | 推荐版本 | 检查命令 |
+|------|---------|---------|---------|
+| JDK | 17 | 21 | `java -version` |
+| Maven | 3.9.0 | 3.9.9+ | `mvn -version` |
+| Eclipse IDE | 2024-12 | 2024-12 | - |
+
+### 推荐的 Eclipse 版本
+
+下载 **Eclipse for RCP and RAP Developers**：
+- 官网：https://www.eclipse.org/downloads/packages/
+- 版本：2024-12 (4.34)
+- 架构：根据您的系统选择（x86_64、aarch64、riscv64）
+
+### 磁盘空间
+
+- 构建所需：约 2GB
+- Eclipse 工作空间：约 1GB
+- 建议总空间：20GB+
+
+---
+
+## 快速开始
+
+如果您熟悉 Eclipse 插件开发，可以直接按照以下步骤操作：
+
+```bash
+# 1. 克隆项目
+git clone https://github.com/ruyisdk/ruyisdk-eclipse-plugins.git
+cd ruyisdk-eclipse-plugins
+
+# 2. 构建项目
+mvn clean verify
+
+# 3. 在 Eclipse 中导入
+# File → Import → Maven → Existing Maven Projects
+# 选择项目根目录 → Finish
+
+# 4. 启动调试
+# 右键任意插件项目 → Debug As → Eclipse Application
+```
+
+---
+
+## 详细步骤
+
+### 步骤 1：克隆并构建项目
+
+#### 1.1 克隆仓库
+
+```bash
+# 从 GitHub 克隆
+git clone https://github.com/ruyisdk/ruyisdk-eclipse-plugins.git
+
+# 或从您的 fork 克隆
+git clone https://github.com/YOUR_USERNAME/ruyisdk-eclipse-plugins.git
+
+cd ruyisdk-eclipse-plugins
+```
+
+#### 1.2 首次完整构建
+
+```bash
+# 清理并构建所有插件
+mvn clean verify
+
+# 构建成功标志
+# [INFO] BUILD SUCCESS
+# [INFO] Total time: XX:XX min
+```
+
+**构建产物位置**：
+- P2 更新站点：`sites/repository/target/repository/`
+- 各插件 JAR：`plugins/*/target/*.jar`
+
+#### 1.3 验证构建
+
+```bash
+# 检查是否生成了插件 JAR
+ls -lh sites/repository/target/repository/plugins/
+
+# 应该看到类似输出：
+# org.ruyisdk.core_0.0.5.YYYYMMDD-HHMM.jar
+# org.ruyisdk.devices_0.0.5.YYYYMMDD-HHMM.jar
+# org.ruyisdk.intro_0.0.5.YYYYMMDD-HHMM.jar
+# ...
+```
+
+---
+
+### 步骤 2：导入项目到 Eclipse
+
+#### 2.1 启动 Eclipse IDE
+
+```bash
+# 如果已添加到 PATH
+eclipse
+
+# 或直接运行
+/path/to/eclipse/eclipse
+```
+
+#### 2.2 导入为 Maven 项目
+
+**重要**：本项目使用 Tycho pom-less builds，导入方式与传统项目不同！
+
+1. 在 Eclipse 菜单栏选择：
+   ```
+   File → Import...
+   ```
+
+2. 在导入向导中：
+   ```
+   展开 Maven
+   → 选择 "Existing Maven Projects"
+   → 点击 Next
+   ```
+
+3. 选择项目目录：
+   ```
+   点击 "Browse..." 按钮
+   → 导航到 ruyisdk-eclipse-plugins 目录
+   → 点击 "Select Folder"
+   ```
+
+4. 确认项目：
+   ```
+   Projects 列表中会显示：
+   ☑ /ruyisdk-eclipse-plugins/pom.xml
+   
+   注意：只会看到一个根项目，这是正常的！
+   ```
+
+5. 完成导入：
+   ```
+   点击 Finish
+   → Eclipse 开始导入和构建
+   → 等待 "Building workspace" 完成
+   ```
+
+#### 2.3 验证导入成功
+
+导入完成后，在 **Project Explorer** 或 **Package Explorer** 中应该看到：
+
+```
+ruyisdk-eclipse-plugins-parent
+├── plugins
+│   ├── org.ruyisdk.core
+│   ├── org.ruyisdk.devices
+│   ├── org.ruyisdk.intro
+│   ├── org.ruyisdk.news
+│   ├── org.ruyisdk.packages
+│   ├── org.ruyisdk.projectcreator
+│   ├── org.ruyisdk.ruyi
+│   └── org.ruyisdk.ui
+├── features
+│   └── org.ruyisdk.feature
+├── sites
+│   └── repository
+└── pom.xml
+```
+
+**检查点**：
+- ✅ 所有插件项目图标上有 "P" 标记（表示是插件项目）
+- ✅ 没有红色错误标记
+- ⚠️ 如果有警告，可以暂时忽略
+
+---
+
+### 步骤 3：配置调试启动
+
+#### 方法 A：快速启动（推荐新手）
+
+这是最简单的方法：
+
+1. **在 Project Explorer 中右键点击任意插件项目**（例如 `org.ruyisdk.core`）
+
+2. **选择运行方式**：
+   ```
+   Run As → Eclipse Application
+   ```
+
+3. **首次启动会自动创建启动配置**，新的 Eclipse 实例会启动
+
+4. **测试是否成功**：
+   - 新 Eclipse 窗口的标题栏会显示 "Eclipse Application"
+   - 检查 Help → About Eclipse 是否显示您的插件
+
+#### 方法 B：自定义调试配置（推荐有经验的开发者）
+
+创建可重复使用的调试配置：
+
+1. **打开调试配置窗口**：
+   ```
+   Run → Debug Configurations...
+   ```
+
+2. **创建新配置**：
+   ```
+   在左侧树中双击 "Eclipse Application"
+   → 会创建一个新配置
+   ```
+
+3. **配置 Main 标签页**：
+   ```
+   Name: RuyiSDK Debug
+   
+   Program to Run:
+   ○ Run a product: (不选)
+   ● Run an application: org.eclipse.ui.ide.workbench
+   ```
+
+4. **配置 Plug-ins 标签页**：
+   ```
+   Launch with: plug-ins selected below only
+   
+   点击 "Add Required Plug-ins" 按钮
+   → Eclipse 会自动选择所有必需的插件
+   
+   确认以下插件被选中：
+   ☑ org.ruyisdk.core
+   ☑ org.ruyisdk.devices
+   ☑ org.ruyisdk.intro
+   ☑ org.ruyisdk.news
+   ☑ org.ruyisdk.packages
+   ☑ org.ruyisdk.projectcreator
+   ☑ org.ruyisdk.ruyi
+   ☑ org.ruyisdk.ui
+   ```
+
+5. **配置 Arguments 标签页**（可选）：
+   
+   **Program arguments**:
+   ```
+   -data ${workspace_loc}/../runtime-workspace
+   -os ${target.os}
+   -ws ${target.ws}
+   -arch ${target.arch}
+   ```
+
+   **VM arguments**:
+   ```
+   -Xms256m
+   -Xmx2048m
+   -Dfile.encoding=UTF-8
+   ```
+
+6. **配置 Configuration 标签页**（可选）：
+   ```
+   勾选 "Clear the configuration area before launching"
+   → 每次启动都使用干净的配置
+   ```
+
+7. **保存并启动**：
+   ```
+   点击 "Debug" 按钮
+   → 新的 Eclipse 实例会以调试模式启动
+   ```
+
+---
+
+### 步骤 4：设置断点并调试
+
+#### 4.1 打开源代码
+
+在 Project Explorer 中导航：
+
+```
+org.ruyisdk.ruyi
+└── src
+    └── org.ruyisdk.ruyi.services
+        └── RuyiManager.java
+```
+
+双击 `RuyiManager.java` 打开编辑器。
+
+#### 4.2 设置断点
+
+**方法 1：双击行号**
+- 在代码行号左侧的灰色区域双击
+- 会出现蓝色圆点 ●
+
+**方法 2：右键菜单**
+- 右键点击代码行号
+- 选择 "Toggle Breakpoint"
+
+**示例位置**：
+```java
+public static boolean isRuyiInstalled() {
+    try {
+        Process process = new ProcessBuilder(...).start();  // ← 在这里设置断点
+        return process.waitFor() == 0;
+    } catch (IOException | InterruptedException e) {
+        return false;
+    }
+}
+```
+
+#### 4.3 触发断点
+
+1. **在运行时 Eclipse 实例中执行操作**：
+   - 打开 Window → Preferences → RuyiSDK
+   - 或触发任何会调用 Ruyi 功能的操作
+
+2. **断点触发**：
+   - 主 Eclipse 窗口会切换到 Debug 透视图
+   - 代码会停在断点处
+   - 当前行会高亮显示
+
+#### 4.4 调试操作
+
+**查看变量**：
+```
+Window → Show View → Variables
+→ 查看当前作用域内的所有变量
+```
+
+**执行控制**：
+| 快捷键 | 功能 | 说明 |
+|-------|------|------|
+| `F5` | Step Into | 进入方法内部 |
+| `F6` | Step Over | 执行当前行 |
+| `F7` | Step Return | 返回到调用方法 |
+| `F8` | Resume | 继续执行到下一个断点 |
+
+**表达式求值**：
+1. 选中代码中的表达式
+2. 右键 → Inspect 或 Watch
+3. 在 Expressions 视图中查看结果
+
+---
+
+## 调试技巧
+
+### 1. 热部署（Hot Swap）
+
+Tycho pom-less builds 的优势：**修改 Java 代码后无需重新构建！**
+
+**工作流程**：
+```
+1. 修改 Java 代码
+   ↓
+2. 保存文件 (Ctrl+S)
+   ↓
+3. Eclipse 自动编译
+   ↓
+4. 在调试中的实例：
+   - 简单修改：自动热更新
+   - 复杂修改：右键项目 → Refresh
+   ↓
+5. 修改立即生效！
+```
+
+**限制**：
+- ✅ 方法体内的代码修改
+- ❌ 添加/删除方法或字段
+- ❌ 修改类签名
+
+对于不支持热部署的修改，需要重启运行时实例。
+
+### 2. 查看插件日志
+
+**在运行时 Eclipse 中**：
+```
+Window → Show View → Error Log
+```
+
+或在主 Eclipse 的 Console 视图中查看 System.out 输出。
+
+### 3. 添加日志输出
+
+使用 Eclipse Platform 的日志 API：
+
+```java
+import org.eclipse.core.runtime.ILog;
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.core.runtime.Status;
+
+public class YourClass {
+    private static final ILog log = Platform.getLog(YourClass.class);
+    
+    public void yourMethod() {
+        // 信息日志
+        log.log(Status.info("执行 yourMethod"));
+        
+        // 警告日志
+        log.log(Status.warning("这是一个警告"));
+        
+        // 错误日志
+        log.log(Status.error("发生错误", exception));
+    }
+}
+```
+
+或使用简单的 System.out（输出到主 Eclipse 的 Console）：
+
+```java
+System.out.println("调试信息: " + variable);
+```
+
+### 4. 条件断点
+
+设置只在特定条件下才触发的断点：
+
+1. 右键点击断点（蓝色圆点）
+2. 选择 "Breakpoint Properties..."
+3. 勾选 "Conditional"
+4. 输入条件表达式，例如：
+   ```java
+   value > 100
+   path.contains("/ruyi")
+   count == 5
+   ```
+5. 点击 OK
+
+### 5. 异常断点
+
+在特定异常抛出时自动中断：
+
+1. 打开 Breakpoints 视图：
+   ```
+   Window → Show View → Breakpoints
+   ```
+
+2. 点击工具栏的 "Add Java Exception Breakpoint" 按钮（J! 图标）
+
+3. 输入异常类名，例如：
+   ```
+   IOException
+   NullPointerException
+   ```
+
+4. 选择触发时机：
+   - Caught: 异常被捕获时
+   - Uncaught: 异常未被捕获时
+
+### 6. 远程调试
+
+如果需要调试已部署的 Eclipse 应用：
+
+**在目标 Eclipse 中**：
+```bash
+eclipse -vmargs -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000
+```
+
+**在开发 Eclipse 中**：
+1. Run → Debug Configurations...
+2. 双击 "Remote Java Application"
+3. 设置：
+   - Host: localhost
+   - Port: 8000
+4. 点击 Debug
+
+---
+
+## 常见问题
+
+### Q1: 导入项目后有很多错误
+
+**问题**：Project Explorer 中的插件项目有红色错误标记。
+
+**解决方案**：
+
+1. 确保已执行 `mvn clean verify`
+2. 在 Eclipse 中：
+   ```
+   右键项目根 → Maven → Update Project...
+   → 勾选 "Force Update of Snapshots/Releases"
+   → 选择所有项目
+   → 点击 OK
+   ```
+
+3. 清理并重新构建：
+   ```
+   Project → Clean...
+   → 选择 "Clean all projects"
+   → 点击 Clean
+   ```
+
+### Q2: 运行时 Eclipse 不包含我的插件
+
+**问题**：启动的 Eclipse 实例中看不到 RuyiSDK 功能。
+
+**解决方案**：
+
+检查启动配置的 Plug-ins 标签页：
+
+1. Run → Debug Configurations...
+2. 选择您的配置
+3. 切换到 Plug-ins 标签页
+4. 确认：
+   - Launch with: "plug-ins selected below only"
+   - 所有 org.ruyisdk.* 插件都被选中
+5. 点击 "Validate Plug-ins" 按钮检查依赖
+
+### Q3: 断点不生效
+
+**问题**：设置的断点变成空心圆圈，或者代码不停在断点处。
+
+**可能原因和解决方案**：
+
+1. **未以 Debug 模式启动**：
+   - 使用 "Debug As" 而不是 "Run As"
+
+2. **代码未同步**：
+   ```
+   右键项目 → Refresh
+   Project → Clean...
+   ```
+
+3. **断点设置在错误的位置**：
+   - 确保断点设置在可执行代码行
+   - 不要设置在注释、空行或方法签名上
+
+4. **类加载问题**：
+   - 重启运行时 Eclipse 实例
+
+### Q4: 修改代码后没有效果
+
+**问题**：修改了 Java 代码并保存，但运行时行为没有改变。
+
+**解决方案**：
+
+1. **确认 Eclipse 自动构建已启用**：
+   ```
+   Project → 确保 "Build Automatically" 被勾选
+   ```
+
+2. **手动清理构建**：
+   ```
+   Project → Clean...
+   → 选择相关项目
+   → 点击 Clean
+   ```
+
+3. **重启运行时实例**：
+   - 关闭调试中的 Eclipse 实例
+   - 重新启动调试配置
+
+4. **检查是否为热部署不支持的修改**：
+   - 如果添加了新方法或字段，必须重启
+
+### Q5: 找不到某个类或资源
+
+**问题**：运行时提示 ClassNotFoundException 或资源找不到。
+
+**解决方案**：
+
+1. **检查 MANIFEST.MF**：
+   ```
+   打开 plugins/org.ruyisdk.xxx/META-INF/MANIFEST.MF
+   → 确认 Require-Bundle 包含所需依赖
+   → 确认 Export-Package 导出了需要的包
+   ```
+
+2. **检查 build.properties**：
+   ```
+   打开 plugins/org.ruyisdk.xxx/build.properties
+   → 确认 bin.includes 包含需要的资源
+   ```
+
+3. **重新构建**：
+   ```bash
+   mvn clean verify
+   ```
+
+4. **重新导入项目**：
+   ```
+   File → Import → Maven → Existing Maven Projects
+   ```
+
+### Q6: 内存不足错误
+
+**问题**：运行时 Eclipse 提示 OutOfMemoryError。
+
+**解决方案**：
+
+增加 VM 参数：
+
+1. Run → Debug Configurations...
+2. 选择您的配置
+3. Arguments 标签页 → VM arguments
+4. 添加或修改：
+   ```
+   -Xms512m
+   -Xmx4096m
+   -XX:MaxMetaspaceSize=512m
+   ```
+
+### Q7: Ruyi 检测错误
+
+**问题**：日志中出现 "Cannot run program /home/user/.local/bin/ruyi"。
+
+**解决方案**：
+
+这是正常的功能性错误，表示系统中未安装 Ruyi 或路径不正确。
+
+**选项 1：安装 Ruyi**
+```bash
+# 按照 Ruyi 官方文档安装到 ~/.local/bin/
+```
+
+**选项 2：配置路径**
+```bash
+mkdir -p ~/.config/ruyisdkide
+echo "ruyi.install.path=/path/to/ruyi" > ~/.config/ruyisdkide/ruyi.properties
+```
+
+**选项 3：暂时忽略**
+- 这个错误不影响插件的其他功能
+- 只是插件启动时的检测
+
+---
+
+## 故障排查
+
+### 启用详细日志
+
+编辑运行时 Eclipse 的配置文件：
+
+```bash
+# 在启动参数中添加
+-debug
+-consoleLog
+```
+
+或创建 `.options` 文件：
+
+```properties
+# 保存为 runtime-workspace/.options
+org.eclipse.core.runtime/debug=true
+org.eclipse.osgi/debug=true
+org.eclipse.osgi/debug/services=true
+```
+
+### 查看 OSGi 控制台
+
+在运行时 Eclipse 的控制台中输入：
+
+```
+ss        # 显示所有 bundles 状态
+diag <id> # 诊断特定 bundle
+start <id> # 启动 bundle
+stop <id>  # 停止 bundle
+```
+
+### 重置工作区
+
+如果遇到奇怪的问题，可以清理工作区：
+
+1. 删除运行时工作区：
+   ```bash
+   rm -rf ../runtime-workspace
+   ```
+
+2. 或在启动配置中：
+   ```
+   Configuration 标签页
+   → 勾选 "Clear the configuration area before launching"
+   ```
+
+### 检查插件加载状态
+
+在运行时 Eclipse 中：
+
+```
+Window → Show View → Other...
+→ Plug-in Development → Plug-ins
+→ 搜索 "ruyisdk" 查看所有 RuyiSDK 插件
+```
+
+---
+
+## 最佳实践
+
+### 1. 使用独立的工作区
+
+为运行时 Eclipse 使用单独的工作区：
+
+```
+-data ${workspace_loc}/../runtime-workspace
+```
+
+这样可以：
+- 避免污染开发工作区
+- 方便测试不同场景
+- 可以随时删除重来
+
+### 2. 定期清理构建
+
+```bash
+# 定期执行
+mvn clean verify
+
+# 或只清理不构建
+mvn clean
+```
+
+### 3. 使用版本控制
+
+调试过程中的临时修改：
+
+```bash
+# 查看修改
+git status
+git diff
+
+# 暂存修改（不提交）
+git stash save "调试临时修改"
+
+# 恢复修改
+git stash pop
+```
+
+### 4. 记录调试发现
+
+在代码中添加 TODO 注释：
+
+```java
+// TODO(yourname): 这里有个性能问题，需要优化
+// FIXME(yourname): 边界条件处理不正确
+```
+
+### 5. 使用调试配置集
+
+为不同场景创建多个配置：
+
+- RuyiSDK Debug - 完整功能
+- RuyiSDK Debug (Core Only) - 只包含核心插件
+- RuyiSDK Debug (Clean) - 干净的配置
+
+---
+
+## 参考资料
+
+### 官方文档
+
+- [Eclipse PDE Guide](https://www.eclipse.org/pde/)
+- [Tycho Documentation](https://tycho.eclipseprojects.io/)
+- [Eclipse Platform Developer Guide](https://help.eclipse.org/latest/index.jsp)
+
+### 项目文档
+
+- [CONTRIBUTING.md](CONTRIBUTING.md) - 贡献指南
+- [BUILD.md](../../BUILD.md) - 构建说明
+- [README.md](../../README.md) - 项目概述
+
+### 学习资源
+
+- [Eclipse 插件开发学习笔记](https://github.com/xijing21/eclipse-myplugins)
+- [RuyiSDK 官网](https://ruyisdk.org)
+
+---
+
+## 获取帮助
+
+如果您遇到本文档未涵盖的问题：
+
+1. **查看已有 Issues**：
+   - https://github.com/ruyisdk/ruyisdk-eclipse-plugins/issues
+
+2. **提交新 Issue**：
+   - 描述问题和复现步骤
+   - 附上日志和错误信息
+   - 说明您的环境（OS、JDK、Eclipse 版本）
+
+3. **参与讨论**：
+   - https://github.com/ruyisdk/ruyisdk-eclipse-plugins/discussions
+
+4. **联系维护者**：
+   - 查看 [CONTRIBUTING.md](CONTRIBUTING.md) 中的联系方式
+
+---
+
+## 更新历史
+
+| 日期 | 版本 | 说明 |
+|------|------|------|
+| 2025-11-08 | 1.0 | 初始版本 |
+
+---
+
+**祝您调试愉快！** 🎉
+

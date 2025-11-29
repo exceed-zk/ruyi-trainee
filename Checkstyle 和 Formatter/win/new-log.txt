@@ -1,0 +1,745 @@
+[INFO] Scanning for projects...
+[INFO] Tycho Version:  4.0.13 (dbd40458ea67f56274c25d9d1fd7f2e5af8971b0)
+[INFO] Tycho Mode:     extension
+[INFO] Tycho Builder:  maven
+[INFO] Build Threads:  1
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] RuyiSDK Eclipse Plugins                                            [pom]
+[INFO] [aggregator] plugins                                               [pom]
+[INFO] [bundle] Core                                           [eclipse-plugin]
+[INFO] [bundle] Devices                                        [eclipse-plugin]
+[INFO] [bundle] RuyiSDK Intro                                  [eclipse-plugin]
+[INFO] [bundle] News                                           [eclipse-plugin]
+[INFO] [bundle] Ruyi                                           [eclipse-plugin]
+[INFO] [bundle] Ruyi SDK Packages                              [eclipse-plugin]
+[INFO] [bundle] RuyiSDK Project Creator                        [eclipse-plugin]
+[INFO] [bundle] Ui                                             [eclipse-plugin]
+[INFO] [aggregator] features                                              [pom]
+[INFO] [feature] RuyiSDK IDE Feature                          [eclipse-feature]
+[INFO] [aggregator] sites                                                 [pom]
+[INFO] [updatesite] repository.eclipse-repository          [eclipse-repository]
+[INFO] 
+[INFO] -------------< org.ruyisdk:ruyisdk-eclipse-plugins-parent >-------------
+[INFO] Building RuyiSDK Eclipse Plugins 0.0.5-SNAPSHOT                   [1/14]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ ruyisdk-eclipse-plugins-parent ---
+[INFO] 开始检查……
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\basedir\TextXdgDir.java:5:1: 导入组之前的额外空行 'org.ruyisdk.core.config.Constants'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\basedir\TextXdgDir.java:10:4: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\config\Constants.java:6:4: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleExtensions.java:7: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleExtensions.java:13:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleExtensions.java:29:5: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleExtensions.java:30:9: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleManager.java:7: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleManager.java:12:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleManager.java:28:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:9: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:39: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:46:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:50:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:54:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:58:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:67: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\TestConsole.java:3:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\TestConsole.java:5:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\preferences\RuyiSdkPreferenceContainer.java:17:4: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\CheckResult.java:6:4: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\RepoConfig.java:6:4: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\RuyiReleaseInfo.java:6:4: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\RuyiVersion.java:6:4: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\SystemInfo.java:8:4: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\SystemInfo.java:74:8: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。 [JavadocParagraph]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\Activator.java:19: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\Activator.java:43: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\model\Device.java:3:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\model\Device.java:10:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\providers\DeviceLabelProvider.java:4:1: 导入语句'org.eclipse.jface.viewers.ITableLabelProvider' 字典顺序错误。应在'org.eclipse.jface.viewers.LabelProvider'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\providers\DeviceLabelProvider.java:8:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:7:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:11:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:19:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:23:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:30:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:34:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:41:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:8:1: 导入语句'java.nio.file.Path' 字典顺序错误。应在'java.util.Properties'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:9:1: 导入语句'java.nio.file.Paths' 字典顺序错误。应在'java.util.Properties'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:10:1: 导入语句'java.nio.file.Files' 字典顺序错误。应在'java.util.Properties'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:11:1: 导入语句'java.io.InputStream' 字典顺序错误。应在'java.util.Properties'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:12:1: 导入语句'java.io.OutputStream' 字典顺序错误。应在'java.util.Properties'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:15:1: 导入语句'org.ruyisdk.core.console.RuyiSdkConsole' 字典顺序错误。应在'org.ruyisdk.devices.model.Device'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:16:1: 导入语句'org.ruyisdk.core.config.Constants' 字典顺序错误。应在'org.ruyisdk.devices.model.Device'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:18:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:23:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:70:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DeviceDialog.java:7:31: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DeviceDialog.java:10:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DeviceDialog.java:18:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:3:36: 不应使用 '.*' 形式的导入 - org.eclipse.jface.preference.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:4:33: 不应使用 '.*' 形式的导入 - org.eclipse.jface.viewers.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:6:30: 不应使用 '.*' 形式的导入 - org.eclipse.swt.layout.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:7:31: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:15:1: 导入组之前的额外空行 'java.util.List'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:15:1: 导入语句'java.util.List' 字典顺序错误。应在'org.ruyisdk.devices.services.DeviceService'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:16:1: 导入语句'org.eclipse.jface.window.Window' 字典顺序错误。应在'org.ruyisdk.devices.services.DeviceService'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:18:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:20:5: 每一个变量的定义必须在它的声明处，且在同一行。 [MultipleVariableDeclarations]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:26:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:108:9: 变量'hasDefault'声明及第一次使用距离4行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。 [VariableDeclarationUsageDistance]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:123: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:133: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:180: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\Activator.java:6:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\Activator.java:11:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\Activator.java:13:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\Activator.java:18:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:10:1: 导入组之前的额外空行 'org.eclipse.core.runtime.FileLocator'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:30:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:68:17: 名称 'resolvedWelcomePageURL' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:78:42: Catch parameter name 'e_resolve' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'. [CatchParameterName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:83: 本行字符数 122个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:101: 本行字符数 145个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:4:1: 导入语句'org.eclipse.core.commands.AbstractHandler' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:5:1: 导入语句'org.eclipse.core.commands.ExecutionEvent' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:6:1: 导入语句'org.eclipse.core.commands.ExecutionException' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:7:1: 导入语句'org.eclipse.ui.PlatformUI' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:8:1: 导入语句'java.io.IOException' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:9:1: 导入语句'java.net.URI' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:10:1: 导入语句'java.net.URISyntaxException' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:11:1: 导入语句'java.net.URL' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:12:1: 导入语句'java.util.Locale' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:14:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:17:21: 'array initialization lcurly' 缩进了20个缩进符，应为以下缩进之一：8, 52, 55, 59。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:18:21: 'array initialization lcurly' 缩进了20个缩进符，应为以下缩进之一：8, 52, 55, 59。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:19:21: 'array initialization lcurly' 缩进了20个缩进符，应为以下缩进之一：8, 52, 55, 59。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:42:13: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:4:1: 导入语句'java.util.ArrayList' 字典顺序错误。应在'java.util.List'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:5:1: 导入语句'java.io.StringReader' 字典顺序错误。应在'java.util.List'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:9:1: 导入语句'javax.json.JsonObject' 字典顺序错误。应在'javax.json.JsonStructure'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:10:1: 导入语句'javax.json.JsonArray' 字典顺序错误。应在'javax.json.JsonStructure'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:12:1: 导入语句'javax.json.*' 字典顺序错误。应在'javax.json.JsonValue'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:12:18: 不应使用 '.*' 形式的导入 - javax.json.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:14:1: 导入组之前的额外空行 'org.ruyisdk.ruyi.util.RuyiFileUtils'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:16:1: 导入组之前的额外空行 'java.io.StringReader'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:16:1: 导入语句'java.io.StringReader' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:17:1: 导入语句'java.io.BufferedReader' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:18:1: 导入语句'java.io.InputStreamReader' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:20:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:22:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:92:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:149:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:185:21: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:193:25: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:7:1: 导入语句'org.eclipse.swt.widgets.List' 字典顺序错误。应在'org.eclipse.swt.widgets.Shell'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:8:1: 导入语句'org.eclipse.swt.widgets.Button' 字典顺序错误。应在'org.eclipse.swt.widgets.Shell'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:9:1: 导入语句'org.eclipse.swt.layout.GridLayout' 字典顺序错误。应在'org.eclipse.swt.widgets.Shell'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:10:1: 导入语句'org.eclipse.swt.layout.GridData' 字典顺序错误。应在'org.eclipse.swt.widgets.Shell'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:12:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:16:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:21:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:10:1: 导入语句'java.io.IOException' 字典顺序错误。应在'java.util.Map'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:12:1: 导入组之前的额外空行 'org.eclipse.jface.action.Action'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:33:1: 导入语句'org.eclipse.jface.viewers.ICheckStateProvider' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:34:1: 导入语句'org.eclipse.ui.IWorkbenchPage' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:35:1: 导入语句'org.eclipse.ui.PlatformUI' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:36:1: 导入语句'org.eclipse.ui.console.IConsoleConstants' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:37:1: 导入语句'org.eclipse.jface.dialogs.Dialog' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:38:1: 导入语句'org.eclipse.swt.widgets.Text' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:39:1: 导入语句'org.eclipse.swt.widgets.Control' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:40:1: 导入语句'org.ruyisdk.packages.JsonParser' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:42:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:115:48: WhitespaceAround: '{' is not followed by whitespace. Empty blocks                may only be represented as {} when not part of a multi-block statement (4.1.3) [WhitespaceAround]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:556: 本行字符数 125个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageLabelProvider.java:5:1: 导入组之前的额外空行 'javax.json.JsonValue'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageLabelProvider.java:5:1: 导入语句'javax.json.JsonValue' 字典顺序错误。应在'org.eclipse.jface.viewers.LabelProvider'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageLabelProvider.java:6:1: 导入语句'java.util.Map' 字典顺序错误。应在'org.eclipse.jface.viewers.LabelProvider'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageLabelProvider.java:8:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeContentProvider.java:5:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeLabelProvider.java:5:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:6:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:13:39: ';' 后应有空格。 [WhitespaceAfter]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:15:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:19:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:60:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:64:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:14:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:20:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:22:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:29:17: Switch 块未定义 default 。 [MissingSwitchDefault]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:59:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\builder\MakefileBuilder.java:16:1: 导入组之前的额外空行 'org.eclipse.core.resources.IFile'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\builder\MakefileBuilder.java:28:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\builder\MakefileBuilder.java:41:9: 变量'projectLocation'声明及第一次使用距离7行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。 [VariableDeclarationUsageDistance]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\builder\MakefileBuilder.java:143:20: 名称 'determineCorrectCFLAGS' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\launch\BuildLaunchShortcut.java:19:1: 导入语句'org.ruyisdk.projectcreator.launch.LaunchConstants.*'位置错误。应位于 'STATIC' 组，此行不应导入。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\launch\BuildLaunchShortcut.java:19:64: 不应使用 '.*' 形式的导入 - org.ruyisdk.projectcreator.launch.LaunchConstants.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\launch\BuildLaunchShortcut.java:21:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\launch\LaunchConstants.java:3:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\natures\MyProjectNature.java:10:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\properties\BuildPropertyPage.java:17:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\utils\ToolchainLocator.java:6:1: 导入组之前的额外空行 'org.eclipse.core.runtime.preferences.InstanceScope'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\utils\ToolchainLocator.java:12:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\utils\ToolchainLocator.java:16:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\utils\ToolchainLocator.java:72:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\BoardSelectionPage.java:11:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\BoardSelectionPage.java:15:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:15:1: 导入组之前的额外空行 'org.eclipse.core.resources.ICommand'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:38:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:44:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:117:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:152:98: 注释应与第154行代码同样缩进8个缩进符，而不是97个。 [CommentsIndentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\ProjectSettingsPage.java:16:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\ProjectSettingsPage.java:23:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\ProjectSettingsPage.java:129:19: 名称 'getCFlags' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:7:1: 导入语句'org.eclipse.core.runtime.IStatus' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiLogger'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:8:1: 导入语句'org.eclipse.core.runtime.Status' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiLogger'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:9:1: 导入语句'org.eclipse.jface.preference.IPreferenceStore' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiLogger'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:11:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:18:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:94: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:13: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:20:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:24:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:27:9: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:42:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:46:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:51:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:61:13: Switch 块未定义 default 。 [MissingSwitchDefault]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiStartup.java:6: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\handlers\CheckInstallationHandler.java:11: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\jobs\CheckRuyiJob.java:13: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\jobs\CheckRuyiJob.java:19:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:8:1: 导入组之前的额外空行 'org.eclipse.swt.SWT'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:14:31: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:18:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:22:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:26:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:39:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:44:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:8:1: 导入组之前的额外空行 'org.eclipse.swt.SWT'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:11:31: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:17:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:23:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:33:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:55:18: 名称 'createCustomRepoUI' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:74:18: 名称 'createStandardRepoUI' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:94:25: 'array initialization' 子元素缩进了24个缩进符，应为以下缩进之一：12, 33, 36。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:95:25: 'array initialization' 子元素缩进了24个缩进符，应为以下缩进之一：12, 33, 36。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:100:25: 'array initialization' 子元素缩进了24个缩进符，应为12个。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:102:25: 'array initialization' 子元素缩进了24个缩进符，应为12个。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:104:25: 'array initialization' 子元素缩进了24个缩进符，应为12个。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:108:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:129:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:143:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiConfigPreferencePage.java:17:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:5:1: 导入组之前的额外空行 'org.eclipse.swt.SWT'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:18:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:22:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:26:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:52:13: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:60:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:64:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:8:1: 导入组之前的额外空行 'org.eclipse.swt.SWT'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:14:31: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:19:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:24:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:31:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:57:25: 'array initialization' 子元素缩进了24个缩进符，应为以下缩进之一：12, 46, 49。 [Indentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:65: 本行字符数 137个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:97:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:110:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:111:9: Switch 块未定义 default 。 [MissingSwitchDefault]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:124:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:128:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:132:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:13: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:16:14: 名称 'RuyiAPI' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:20: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:48: 本行字符数 124个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:49: 本行字符数 121个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:49:116: 注释应与第50行代码同样缩进28个缩进符，而不是115个。 [CommentsIndentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:81:13: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:83:13: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:90: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:93:1: 顶级类 RuyiAPIException 应位于它自己的源文件中。 [OneTopLevelClass]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:93:7: 名称 'RuyiAPIException' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:7:1: 导入组之前的额外空行 'org.ruyisdk.core.ruyi.model.RuyiVersion'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:10:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:12:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:42:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:60:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:76:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:93:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:95:9: Switch 块未定义 default 。 [MissingSwitchDefault]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:124:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:140:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:19:1: 导入组之前的额外空行 'org.eclipse.core.runtime.IProgressMonitor'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:32:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:49:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:56:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:132:24: 名称 'requiredMB' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:134:24: 名称 'freeMB' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:143:20: 名称 'freeMB' 中不能出现超过 '1' 个连续大写字母。 [AbbreviationAsWordInName]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:186:37: 'if' 结构必须使用大括号 '{}'。 [NeedBraces]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:266:91: '+' 应另起一行。 [OperatorWrap]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:267:43: '+' 应另起一行。 [OperatorWrap]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:532:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:11:1: 导入组之前的额外空行 'org.ruyisdk.core.config.Constants'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:17:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:19:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:30:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:60:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:11:1: 导入语句'java.util.Locale' 字典顺序错误。应在'java.util.Properties'之前。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:13:1: 导入组之前的额外空行 'org.ruyisdk.core.basedir.XdgDirs'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:21:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:87:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:97:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:107:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:116:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:125:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:134:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:140:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:148:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:153:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:161:5: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:6:31: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:8:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:13:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:39:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:52:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:63:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:5:1: 导入组之前的额外空行 'org.eclipse.core.runtime.IProgressMonitor'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:10:32: 不应使用 '.*' 形式的导入 - org.eclipse.jface.wizard.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:20:31: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:35:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:36:5: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:44:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:48:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:77:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:132:100: '+' 应另起一行。 [OperatorWrap]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:133: 本行字符数 123个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:133:112: '+' 应另起一行。 [OperatorWrap]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:134: 本行字符数 122个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:134:114: 注释应与第135行代码同样缩进28个缩进符，而不是113个。 [CommentsIndentation]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:135: 本行字符数 161个，最多：120个。 [LineLength]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:389:5: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:390:9: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:392:9: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:7:31: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:9:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:13:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:39:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:52:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\PathUtils.java:9:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\PathUtils.java:11: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\PathUtils.java:29: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\PathUtils.java:44: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:5:21: 不应使用 '.*' 形式的导入 - java.nio.file.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:7:1: 导入组之前的额外空行 'org.ruyisdk.core.config.Constants'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:10:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:13:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:34:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:44:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:53:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:58:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:62:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:67:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:8:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:11:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:15:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:19:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:23:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:27:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:32:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:3:15: 不应使用 '.*' 形式的导入 - java.io.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:4:16: 不应使用 '.*' 形式的导入 - java.net.* 。 [AvoidStarImport]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:9:1: 导入组之前的额外空行 'org.eclipse.core.runtime.IProgressMonitor'。 [CustomImportOrder]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:12:1: 缺少 Javadoc 。 [MissingJavadocType]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:17: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:83: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:130: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:197: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:9: Javadoc的第一句缺少一个结束时期。 [SummaryJavadoc]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:14:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:19:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:24:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:28:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+[WARN] D:\ruyiSDK\plugins\ruyisdk-eclipse-plugins\plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:32:5: 缺少 Javadoc 。 [MissingJavadocMethod]
+检查完成。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\basedir\TextXdgDir.java:[5,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.ruyisdk.core.config.Constants'。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\basedir\TextXdgDir.java:[10,4] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\config\Constants.java:[6,4] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleExtensions.java:[7] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleExtensions.java:[13,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleExtensions.java:[29,5] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleExtensions.java:[30,9] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleManager.java:[7] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleManager.java:[12,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\ConsoleManager.java:[28,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:[9] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:[39] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:[46,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:[50,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:[54,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:[58,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\RuyiSdkConsole.java:[67] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\TestConsole.java:[3,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\console\TestConsole.java:[5,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\preferences\RuyiSdkPreferenceContainer.java:[17,4] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\CheckResult.java:[6,4] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\RepoConfig.java:[6,4] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\RuyiReleaseInfo.java:[6,4] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\RuyiVersion.java:[6,4] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\SystemInfo.java:[8,4] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.core\src\org\ruyisdk\core\ruyi\model\SystemInfo.java:[74,8] (javadoc) JavadocParagraph: <p> 标签应在第一个字符之前，紧邻后者，之间不允许有空格。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\Activator.java:[19] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\Activator.java:[43] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\model\Device.java:[3,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\model\Device.java:[10,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\providers\DeviceLabelProvider.java:[4,1] (imports) CustomImportOrder: 导入语句'org.eclipse.jface.viewers.ITableLabelProvider' 字典顺序错误。应在'org.eclipse.jface.viewers.LabelProvider'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\providers\DeviceLabelProvider.java:[8,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:[7,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:[11,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:[19,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:[23,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:[30,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:[34,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\DeviceService.java:[41,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[8,1] (imports) CustomImportOrder: 导入语句'java.nio.file.Path' 字典顺序错误。应在'java.util.Properties'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[9,1] (imports) CustomImportOrder: 导入语句'java.nio.file.Paths' 字典顺序错误。应在'java.util.Properties'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[10,1] (imports) CustomImportOrder: 导入语句'java.nio.file.Files' 字典顺序错误。应在'java.util.Properties'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[11,1] (imports) CustomImportOrder: 导入语句'java.io.InputStream' 字典顺序错误。应在'java.util.Properties'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[12,1] (imports) CustomImportOrder: 导入语句'java.io.OutputStream' 字典顺序错误。应在'java.util.Properties'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[15,1] (imports) CustomImportOrder: 导入语句'org.ruyisdk.core.console.RuyiSdkConsole' 字典顺序错误。应在'org.ruyisdk.devices.model.Device'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[16,1] (imports) CustomImportOrder: 导入语句'org.ruyisdk.core.config.Constants' 字典顺序错误。应在'org.ruyisdk.devices.model.Device'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[18,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[23,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\services\PropertiesService.java:[70,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DeviceDialog.java:[7,31] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DeviceDialog.java:[10,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DeviceDialog.java:[18,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[3,36] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.jface.preference.* 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[4,33] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.jface.viewers.* 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[6,30] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.layout.* 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[7,31] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[15,1] (imports) CustomImportOrder: 导入组之前的额外空行 'java.util.List'。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[15,1] (imports) CustomImportOrder: 导入语句'java.util.List' 字典顺序错误。应在'org.ruyisdk.devices.services.DeviceService'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[16,1] (imports) CustomImportOrder: 导入语句'org.eclipse.jface.window.Window' 字典顺序错误。应在'org.ruyisdk.devices.services.DeviceService'之前。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[18,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[20,5] (coding) MultipleVariableDeclarations: 每一个变量的定义必须在它的声明处，且在同一行。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[26,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[108,9] (coding) VariableDeclarationUsageDistance: 变量'hasDefault'声明及第一次使用距离4行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[123] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[133] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.devices\src\org\ruyisdk\devices\views\DevicePreferencePage.java:[180] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\Activator.java:[6,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\Activator.java:[11,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\Activator.java:[13,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\Activator.java:[18,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:[10,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.core.runtime.FileLocator'。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:[30,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:[68,17] (naming) AbbreviationAsWordInName: 名称 'resolvedWelcomePageURL' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:[78,42] (naming) CatchParameterName: Catch parameter name 'e_resolve' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:[83] (sizes) LineLength: 本行字符数 122个，最多：120个。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\CustomIntroPart.java:[101] (sizes) LineLength: 本行字符数 145个，最多：120个。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[4,1] (imports) CustomImportOrder: 导入语句'org.eclipse.core.commands.AbstractHandler' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[5,1] (imports) CustomImportOrder: 导入语句'org.eclipse.core.commands.ExecutionEvent' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[6,1] (imports) CustomImportOrder: 导入语句'org.eclipse.core.commands.ExecutionException' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[7,1] (imports) CustomImportOrder: 导入语句'org.eclipse.ui.PlatformUI' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[8,1] (imports) CustomImportOrder: 导入语句'java.io.IOException' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[9,1] (imports) CustomImportOrder: 导入语句'java.net.URI' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[10,1] (imports) CustomImportOrder: 导入语句'java.net.URISyntaxException' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[11,1] (imports) CustomImportOrder: 导入语句'java.net.URL' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[12,1] (imports) CustomImportOrder: 导入语句'java.util.Locale' 字典顺序错误。应在'org.eclipse.ui.browser.IWorkbenchBrowserSupport'之前。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[14,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[17,21] (indentation) Indentation: 'array initialization lcurly' 缩进了20个缩进符，应为以下缩进之一：8, 52, 55, 59。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[18,21] (indentation) Indentation: 'array initialization lcurly' 缩进了20个缩进符，应为以下缩进之一：8, 52, 55, 59。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[19,21] (indentation) Indentation: 'array initialization lcurly' 缩进了20个缩进符，应为以下缩进之一：8, 52, 55, 59。
+[WARNING] plugins\org.ruyisdk.intro\src\org\ruyisdk\intro\OpenBrowserHandler.java:[42,13] (blocks) NeedBraces: 'if' 结构必须使用大括号 '{}'。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[4,1] (imports) CustomImportOrder: 导入语句'java.util.ArrayList' 字典顺序错误。应在'java.util.List'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[5,1] (imports) CustomImportOrder: 导入语句'java.io.StringReader' 字典顺序错误。应在'java.util.List'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[9,1] (imports) CustomImportOrder: 导入语句'javax.json.JsonObject' 字典顺序错误。应在'javax.json.JsonStructure'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[10,1] (imports) CustomImportOrder: 导入语句'javax.json.JsonArray' 字典顺序错误。应在'javax.json.JsonStructure'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[12,1] (imports) CustomImportOrder: 导入语句'javax.json.*' 字典顺序错误。应在'javax.json.JsonValue'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[12,18] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - javax.json.* 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[14,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.ruyisdk.ruyi.util.RuyiFileUtils'。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[16,1] (imports) CustomImportOrder: 导入组之前的额外空行 'java.io.StringReader'。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[16,1] (imports) CustomImportOrder: 导入语句'java.io.StringReader' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[17,1] (imports) CustomImportOrder: 导入语句'java.io.BufferedReader' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[18,1] (imports) CustomImportOrder: 导入语句'java.io.InputStreamReader' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[20,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[22,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[92,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[149,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[185,21] (blocks) NeedBraces: 'if' 结构必须使用大括号 '{}'。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\JsonParser.java:[193,25] (blocks) NeedBraces: 'if' 结构必须使用大括号 '{}'。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:[7,1] (imports) CustomImportOrder: 导入语句'org.eclipse.swt.widgets.List' 字典顺序错误。应在'org.eclipse.swt.widgets.Shell'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:[8,1] (imports) CustomImportOrder: 导入语句'org.eclipse.swt.widgets.Button' 字典顺序错误。应在'org.eclipse.swt.widgets.Shell'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:[9,1] (imports) CustomImportOrder: 导入语句'org.eclipse.swt.layout.GridLayout' 字典顺序错误。应在'org.eclipse.swt.widgets.Shell'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:[10,1] (imports) CustomImportOrder: 导入语句'org.eclipse.swt.layout.GridData' 字典顺序错误。应在'org.eclipse.swt.widgets.Shell'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:[12,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:[16,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\ListDialog.java:[21,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[10,1] (imports) CustomImportOrder: 导入语句'java.io.IOException' 字典顺序错误。应在'java.util.Map'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[12,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.jface.action.Action'。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[33,1] (imports) CustomImportOrder: 导入语句'org.eclipse.jface.viewers.ICheckStateProvider' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[34,1] (imports) CustomImportOrder: 导入语句'org.eclipse.ui.IWorkbenchPage' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[35,1] (imports) CustomImportOrder: 导入语句'org.eclipse.ui.PlatformUI' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[36,1] (imports) CustomImportOrder: 导入语句'org.eclipse.ui.console.IConsoleConstants' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[37,1] (imports) CustomImportOrder: 导入语句'org.eclipse.jface.dialogs.Dialog' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[38,1] (imports) CustomImportOrder: 导入语句'org.eclipse.swt.widgets.Text' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[39,1] (imports) CustomImportOrder: 导入语句'org.eclipse.swt.widgets.Control' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[40,1] (imports) CustomImportOrder: 导入语句'org.ruyisdk.packages.JsonParser' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiFileUtils'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[42,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[115,48] (whitespace) WhitespaceAround: WhitespaceAround: '{' is not followed by whitespace. Empty blocks                may only be represented as {} when not part of a multi-block statement (4.1.3)
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageExplorerView.java:[556] (sizes) LineLength: 本行字符数 125个，最多：120个。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageLabelProvider.java:[5,1] (imports) CustomImportOrder: 导入组之前的额外空行 'javax.json.JsonValue'。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageLabelProvider.java:[5,1] (imports) CustomImportOrder: 导入语句'javax.json.JsonValue' 字典顺序错误。应在'org.eclipse.jface.viewers.LabelProvider'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageLabelProvider.java:[6,1] (imports) CustomImportOrder: 导入语句'java.util.Map' 字典顺序错误。应在'org.eclipse.jface.viewers.LabelProvider'之前。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\PackageLabelProvider.java:[8,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeContentProvider.java:[5,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeLabelProvider.java:[5,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:[6,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:[13,39] (whitespace) WhitespaceAfter: ';' 后应有空格。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:[15,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:[19,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:[60,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.packages\src\org\ruyisdk\packages\TreeNode.java:[64,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:[14,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:[20,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:[22,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:[29,17] (coding) MissingSwitchDefault: Switch 块未定义 default 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\Activator.java:[59,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\builder\MakefileBuilder.java:[16,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.core.resources.IFile'。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\builder\MakefileBuilder.java:[28,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\builder\MakefileBuilder.java:[41,9] (coding) VariableDeclarationUsageDistance: 变量'projectLocation'声明及第一次使用距离7行（最多：3 行）。若需要存储该变量的值，请将其声明为final的（方法调用前声明以避免副作用影响原值）。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\builder\MakefileBuilder.java:[143,20] (naming) AbbreviationAsWordInName: 名称 'determineCorrectCFLAGS' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\launch\BuildLaunchShortcut.java:[19,1] (imports) CustomImportOrder: 导入语句'org.ruyisdk.projectcreator.launch.LaunchConstants.*'位置错误。应位于 'STATIC' 组，此行不应导入。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\launch\BuildLaunchShortcut.java:[19,64] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.ruyisdk.projectcreator.launch.LaunchConstants.* 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\launch\BuildLaunchShortcut.java:[21,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\launch\LaunchConstants.java:[3,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\natures\MyProjectNature.java:[10,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\properties\BuildPropertyPage.java:[17,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\utils\ToolchainLocator.java:[6,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.core.runtime.preferences.InstanceScope'。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\utils\ToolchainLocator.java:[12,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\utils\ToolchainLocator.java:[16,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\utils\ToolchainLocator.java:[72,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\BoardSelectionPage.java:[11,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\BoardSelectionPage.java:[15,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:[15,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.core.resources.ICommand'。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:[38,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:[44,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:[117,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\NewProjectWizard.java:[152,98] (indentation) CommentsIndentation: 注释应与第154行代码同样缩进8个缩进符，而不是97个。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\ProjectSettingsPage.java:[16,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\ProjectSettingsPage.java:[23,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.projectcreator\src\org\ruyisdk\projectcreator\wizards\ProjectSettingsPage.java:[129,19] (naming) AbbreviationAsWordInName: 名称 'getCFlags' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:[7,1] (imports) CustomImportOrder: 导入语句'org.eclipse.core.runtime.IStatus' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiLogger'之前。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:[8,1] (imports) CustomImportOrder: 导入语句'org.eclipse.core.runtime.Status' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiLogger'之前。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:[9,1] (imports) CustomImportOrder: 导入语句'org.eclipse.jface.preference.IPreferenceStore' 字典顺序错误。应在'org.ruyisdk.ruyi.util.RuyiLogger'之前。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:[11,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:[18,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\Activator.java:[94] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:[13] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:[20,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:[24,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:[27,9] (blocks) NeedBraces: 'if' 结构必须使用大括号 '{}'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:[42,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:[46,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:[51,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiCore.java:[61,13] (coding) MissingSwitchDefault: Switch 块未定义 default 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\core\RuyiStartup.java:[6] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\handlers\CheckInstallationHandler.java:[11] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\jobs\CheckRuyiJob.java:[13] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\jobs\CheckRuyiJob.java:[19,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:[8,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.swt.SWT'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:[14,31] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:[18,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:[22,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:[26,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:[39,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\AutomaticCheckPreference.java:[44,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[8,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.swt.SWT'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[11,31] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[17,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[23,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[33,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[55,18] (naming) AbbreviationAsWordInName: 名称 'createCustomRepoUI' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[74,18] (naming) AbbreviationAsWordInName: 名称 'createStandardRepoUI' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[94,25] (indentation) Indentation: 'array initialization' 子元素缩进了24个缩进符，应为以下缩进之一：12, 33, 36。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[95,25] (indentation) Indentation: 'array initialization' 子元素缩进了24个缩进符，应为以下缩进之一：12, 33, 36。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[100,25] (indentation) Indentation: 'array initialization' 子元素缩进了24个缩进符，应为12个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[102,25] (indentation) Indentation: 'array initialization' 子元素缩进了24个缩进符，应为12个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[104,25] (indentation) Indentation: 'array initialization' 子元素缩进了24个缩进符，应为12个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[108,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[129,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RepoConfigPreference.java:[143,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiConfigPreferencePage.java:[17,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:[5,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.swt.SWT'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:[18,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:[22,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:[26,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:[52,13] (blocks) NeedBraces: 'if' 结构必须使用大括号 '{}'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:[60,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\RuyiInstallPathPreference.java:[64,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[8,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.swt.SWT'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[14,31] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[19,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[24,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[31,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[57,25] (indentation) Indentation: 'array initialization' 子元素缩进了24个缩进符，应为以下缩进之一：12, 46, 49。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[65] (sizes) LineLength: 本行字符数 137个，最多：120个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[97,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[110,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[111,9] (coding) MissingSwitchDefault: Switch 块未定义 default 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[124,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[128,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\preferences\TelemetryPreference.java:[132,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[13] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[16,14] (naming) AbbreviationAsWordInName: 名称 'RuyiAPI' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[20] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[48] (sizes) LineLength: 本行字符数 124个，最多：120个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[49] (sizes) LineLength: 本行字符数 121个，最多：120个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[49,116] (indentation) CommentsIndentation: 注释应与第50行代码同样缩进28个缩进符，而不是115个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[81,13] (blocks) NeedBraces: 'if' 结构必须使用大括号 '{}'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[83,13] (blocks) NeedBraces: 'if' 结构必须使用大括号 '{}'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[90] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[93,1] (design) OneTopLevelClass: 顶级类 RuyiAPIException 应位于它自己的源文件中。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiAPI.java:[93,7] (naming) AbbreviationAsWordInName: 名称 'RuyiAPIException' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[7,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.ruyisdk.core.ruyi.model.RuyiVersion'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[10,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[12,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[42,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[60,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[76,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[93,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[95,9] (coding) MissingSwitchDefault: Switch 块未定义 default 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[124,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiCommand.java:[140,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[19,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.core.runtime.IProgressMonitor'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[32,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[49,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[56,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[132,24] (naming) AbbreviationAsWordInName: 名称 'requiredMB' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[134,24] (naming) AbbreviationAsWordInName: 名称 'freeMB' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[143,20] (naming) AbbreviationAsWordInName: 名称 'freeMB' 中不能出现超过 '1' 个连续大写字母。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[186,37] (blocks) NeedBraces: 'if' 结构必须使用大括号 '{}'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[266,91] (whitespace) OperatorWrap: '+' 应另起一行。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[267,43] (whitespace) OperatorWrap: '+' 应另起一行。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiInstallManager.java:[532,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:[11,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.ruyisdk.core.config.Constants'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:[17,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:[19,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:[30,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiManager.java:[60,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[11,1] (imports) CustomImportOrder: 导入语句'java.util.Locale' 字典顺序错误。应在'java.util.Properties'之前。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[13,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.ruyisdk.core.basedir.XdgDirs'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[21,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[87,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[97,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[107,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[116,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[125,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[134,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[140,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[148,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[153,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\services\RuyiProperties.java:[161,5] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:[6,31] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:[8,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:[13,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:[39,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:[52,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\InstallProgressComposite.java:[63,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[5,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.core.runtime.IProgressMonitor'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[10,32] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.jface.wizard.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[20,31] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[35,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[36,5] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[44,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[48,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[77,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[132,100] (whitespace) OperatorWrap: '+' 应另起一行。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[133] (sizes) LineLength: 本行字符数 123个，最多：120个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[133,112] (whitespace) OperatorWrap: '+' 应另起一行。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[134] (sizes) LineLength: 本行字符数 122个，最多：120个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[134,114] (indentation) CommentsIndentation: 注释应与第135行代码同样缩进28个缩进符，而不是113个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[135] (sizes) LineLength: 本行字符数 161个，最多：120个。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[389,5] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[390,9] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\RuyiInstallWizard.java:[392,9] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:[7,31] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - org.eclipse.swt.widgets.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:[9,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:[13,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:[39,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\ui\VersionCompareComposite.java:[52,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\PathUtils.java:[9,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\PathUtils.java:[11] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\PathUtils.java:[29] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\PathUtils.java:[44] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[5,21] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - java.nio.file.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[7,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.ruyisdk.core.config.Constants'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[10,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[13,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[34,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[44,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[53,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[58,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[62,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiFileUtils.java:[67,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:[8,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:[11,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:[15,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:[19,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:[23,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:[27,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiLogger.java:[32,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:[3,15] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - java.io.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:[4,16] (imports) AvoidStarImport: 不应使用 '.*' 形式的导入 - java.net.* 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:[9,1] (imports) CustomImportOrder: 导入组之前的额外空行 'org.eclipse.core.runtime.IProgressMonitor'。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:[12,1] (javadoc) MissingJavadocType: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:[17] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:[83] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:[130] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\RuyiNetworkUtils.java:[197] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:[9] (javadoc) SummaryJavadoc: Javadoc的第一句缺少一个结束时期。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:[14,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:[19,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:[24,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:[28,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[WARNING] plugins\org.ruyisdk.ruyi\src\org\ruyisdk\ruyi\util\StatusUtil.java:[32,5] (javadoc) MissingJavadocMethod: 缺少 Javadoc 。
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for RuyiSDK Eclipse Plugins 0.0.5-SNAPSHOT:
+[INFO] 
+[INFO] RuyiSDK Eclipse Plugins ............................ FAILURE [  5.658 s]
+[INFO] [aggregator] plugins ............................... SKIPPED
+[INFO] [bundle] Core ...................................... SKIPPED
+[INFO] [bundle] Devices ................................... SKIPPED
+[INFO] [bundle] RuyiSDK Intro ............................. SKIPPED
+[INFO] [bundle] News ...................................... SKIPPED
+[INFO] [bundle] Ruyi ...................................... SKIPPED
+[INFO] [bundle] Ruyi SDK Packages ......................... SKIPPED
+[INFO] [bundle] RuyiSDK Project Creator ................... SKIPPED
+[INFO] [bundle] Ui ........................................ SKIPPED
+[INFO] [aggregator] features .............................. SKIPPED
+[INFO] [feature] RuyiSDK IDE Feature ...................... SKIPPED
+[INFO] [aggregator] sites ................................. SKIPPED
+[INFO] [updatesite] repository.eclipse-repository ......... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.821 s
+[INFO] Finished at: 2025-11-23T13:54:24+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-checkstyle-plugin:3.3.1:check (default-cli) on project ruyisdk-eclipse-plugins-parent: You have 342 Checkstyle violations. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
