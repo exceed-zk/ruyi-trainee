@@ -1,0 +1,23 @@
+接着上一个任务调试文档的编写
+
+新任务：给 Eclipse 加一个新的 Update Site，这样用户使用咱的 IDE 就不用手动添加.
+
+Name: RuyiSDK Updates (GitHub)
+Location: https://ruyisdk.github.io/ruyisdk-eclipse-plugins/
+
+添好以后开 PR，PR 里放截图，再写点文字说明。
+如果参考了什么资料，你也写上去，供后人参考。
+
+不用长篇大论，事情讲明白就行。
+（没做文档记录，但是完成了）
+
+每天起床第一件事， git fetch --tags --all
+
+hore: pom-less builds; rm unused stuff; sync version to 0.0.5; downgrade to JDK 17 for multiple JDK LTS builds; use CI to make releases and website conditional; add DCO check by pzhlkj6612 · Pull Request #5 · exceed-zk/ruyisdk-eclipse-plugins
+https://github.com/exceed-zk/ruyisdk-eclipse-plugins/pull/5
+
+阅读这个 PR，然后按图上圈的将代码 rebase 到分支。
+
+足够的磁盘空间 (建议 40GB+)--删除
+
+开始读 CI 脚本，遇到不懂的记录下来

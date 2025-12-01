@@ -1,0 +1,2 @@
+Javadoc 用  Formatter，数组格式用 Checkstyle。
+你提代码吧，记得先 git fetch 观察远程仓库的修改。

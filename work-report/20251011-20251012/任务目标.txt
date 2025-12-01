@@ -1,0 +1,8 @@
+尝试一下eclipse&自研发插件的构建，
+希望能在插件工程中加入maven工具，
+并将构建集成到packages工程中（https://github.com/ruyisdk/ruyisdk-eclipse-packages/）。
+尝试调研和实现一下。
+
+需要注意的是：
+1. maven版本需要调研下，能够兼容eclipse 202409及以后的版本（支持riscv64以后的版本）
+2. 通过fork仓库到个人账号，在个人仓库提交修改后的代码

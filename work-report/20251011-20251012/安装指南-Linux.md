@@ -23,7 +23,6 @@ RuyiSDK 插件为 Eclipse 添加了专门的 RISC-V 开发功能：
 |------|---------|------|------|
 | **方法一：本地 P2 仓库** | 已有 Eclipse IDE | 简单快速，无需重新构建 | 需要手动更新 |
 | **方法二：重新构建 IDE** | 需要定制 IDE | 插件完全集成 | 构建时间长 |
-| **方法三：在线更新站点** | 有网络环境 | 自动更新 | 需要部署更新站点 |
 
 **推荐**：如果您已经有运行的 RuyiSDK IDE，使用**方法一**最简单。
 
@@ -273,58 +272,6 @@ ruyisdk
 ```
 
 这个 IDE 已经完全集成了所有 RuyiSDK 插件！
-
----
-
-## 方法三：从 Windows 构建并传输
-
-### 步骤 1：在 Windows 上构建
-
-```powershell
-# 打开 PowerShell
-cd D:\ruyiSDK
-
-# 1. 构建插件
-cd plugins\ruyisdk-eclipse-plugins
-mvn clean verify
-
-# 2. 构建 IDE
-cd ..\..\package\ruyisdk-eclipse-packages
-mvn clean verify -Pepp.p2.embedcpp -Pepp.product.embedcpp -Pepp.materialize-products
-```
-
-### 步骤 2：传输到 Linux
-
-```powershell
-# 找到构建的包
-cd packages\org.eclipse.epp.package.embedcpp.product\target\products\
-
-# 传输到 Linux
-scp ruyisdk-0.0.3-linux.gtk.x86_64.tar.gz root@linux-vm:/tmp/
-```
-
-### 步骤 3：在 Linux 上安装
-
-```bash
-# 解压并安装
-cd /tmp
-tar -xzf ruyisdk-0.0.3-linux.gtk.x86_64.tar.gz
-
-# 修复权限（重要！）
-cd ruyisdk
-chmod +x ruyisdk
-find . -type f -name "*.so" -exec chmod +x {} \;
-find . -path "*/bin/*" -type f -exec chmod +x {} \;
-
-# 移到安装位置
-cd ..
-sudo mv ruyisdk /opt/ruyisdk-with-plugins
-
-# 运行
-/opt/ruyisdk-with-plugins/ruyisdk
-```
-
-**注意**：从 Windows 传输时一定要修复权限！
 
 ---
 

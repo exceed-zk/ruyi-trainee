@@ -1,0 +1,5 @@
+你看看这几个 XML 配置怎么能给 Eclipse 环境用上：
+ https://github.com/ruyisdk/ruyisdk-eclipse-plugins/tree/main/docs/developer/coding-guidelines
+
+得配到 CI 里，每次自动检查代码风格。
+刚才字儿没打完。

@@ -1,0 +1,256 @@
+[INFO] Scanning for projects...
+[INFO] Tycho Version:  4.0.13 (dbd40458ea67f56274c25d9d1fd7f2e5af8971b0)
+[INFO] Tycho Mode:     extension
+[INFO] Tycho Builder:  maven
+[INFO] Build Threads:  1
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] RuyiSDK Eclipse Plugins                                            [pom]
+[INFO] [aggregator] plugins                                               [pom]
+[INFO] [bundle] Core                                           [eclipse-plugin]
+[INFO] [bundle] Devices                                        [eclipse-plugin]
+[INFO] [bundle] RuyiSDK Intro                                  [eclipse-plugin]
+[INFO] [bundle] News                                           [eclipse-plugin]
+[INFO] [bundle] Ruyi                                           [eclipse-plugin]
+[INFO] [bundle] Ruyi SDK Packages                              [eclipse-plugin]
+[INFO] [bundle] RuyiSDK Project Creator                        [eclipse-plugin]
+[INFO] [bundle] Ui                                             [eclipse-plugin]
+[INFO] [aggregator] features                                              [pom]
+[INFO] [feature] RuyiSDK IDE Feature                          [eclipse-feature]
+[INFO] [aggregator] sites                                                 [pom]
+[INFO] [updatesite] repository.eclipse-repository          [eclipse-repository]
+[INFO] 
+[INFO] -------------< org.ruyisdk:ruyisdk-eclipse-plugins-parent >-------------
+[INFO] Building RuyiSDK Eclipse Plugins 0.0.5-SNAPSHOT                   [1/14]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ ruyisdk-eclipse-plugins-parent ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ ruyisdk-eclipse-plugins-parent ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ ruyisdk-eclipse-plugins-parent ---
+[INFO] Processed 65 files in 2s871ms (Formatted: 0, Skipped: 0, Unchanged: 65, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] ------------------------< org.ruyisdk:plugins >-------------------------
+[INFO] Building [aggregator] plugins 0.0.5-SNAPSHOT                      [2/14]
+[INFO]   from plugins/.polyglot.pom.tycho
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ plugins ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ plugins ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ plugins ---
+[INFO] 
+[INFO] --------------------< org.ruyisdk:org.ruyisdk.core >--------------------
+[INFO] Building [bundle] Core 0.0.5-SNAPSHOT                             [3/14]
+[INFO]   from plugins/org.ruyisdk.core/.polyglot.META-INF
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.core ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/org.ruyisdk.core/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.core ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.core ---
+[INFO] 
+[INFO] ------------------< org.ruyisdk:org.ruyisdk.devices >-------------------
+[INFO] Building [bundle] Devices 0.0.5-SNAPSHOT                          [4/14]
+[INFO]   from plugins/org.ruyisdk.devices/.polyglot.META-INF
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.devices ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/org.ruyisdk.devices/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.devices ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.devices ---
+[INFO] 
+[INFO] -------------------< org.ruyisdk:org.ruyisdk.intro >--------------------
+[INFO] Building [bundle] RuyiSDK Intro 0.0.5-SNAPSHOT                    [5/14]
+[INFO]   from plugins/org.ruyisdk.intro/.polyglot.META-INF
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.intro ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/org.ruyisdk.intro/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.intro ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.intro ---
+[INFO] 
+[INFO] --------------------< org.ruyisdk:org.ruyisdk.news >--------------------
+[INFO] Building [bundle] News 0.0.5-SNAPSHOT                             [6/14]
+[INFO]   from plugins/org.ruyisdk.news/.polyglot.META-INF
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.news ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/org.ruyisdk.news/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.news ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.news ---
+[INFO] 
+[INFO] --------------------< org.ruyisdk:org.ruyisdk.ruyi >--------------------
+[INFO] Building [bundle] Ruyi 0.0.5-SNAPSHOT                             [7/14]
+[INFO]   from plugins/org.ruyisdk.ruyi/.polyglot.META-INF
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.ruyi ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/org.ruyisdk.ruyi/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.ruyi ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.ruyi ---
+[INFO] 
+[INFO] ------------------< org.ruyisdk:org.ruyisdk.packages >------------------
+[INFO] Building [bundle] Ruyi SDK Packages 0.0.5-SNAPSHOT                [8/14]
+[INFO]   from plugins/org.ruyisdk.packages/.polyglot.META-INF
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.packages ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/org.ruyisdk.packages/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.packages ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.packages ---
+[INFO] 
+[INFO] ---------------< org.ruyisdk:org.ruyisdk.projectcreator >---------------
+[INFO] Building [bundle] RuyiSDK Project Creator 0.0.5-SNAPSHOT          [9/14]
+[INFO]   from plugins/org.ruyisdk.projectcreator/.polyglot.META-INF
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.projectcreator ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/org.ruyisdk.projectcreator/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.projectcreator ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.projectcreator ---
+[INFO] 
+[INFO] ---------------------< org.ruyisdk:org.ruyisdk.ui >---------------------
+[INFO] Building [bundle] Ui 0.0.5-SNAPSHOT                              [10/14]
+[INFO]   from plugins/org.ruyisdk.ui/.polyglot.META-INF
+[INFO] ---------------------------[ eclipse-plugin ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.ui ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/plugins/org.ruyisdk.ui/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.ui ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.ui ---
+[INFO] 
+[INFO] ------------------------< org.ruyisdk:features >------------------------
+[INFO] Building [aggregator] features 0.0.5-SNAPSHOT                    [11/14]
+[INFO]   from features/.polyglot.pom.tycho
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ features ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/features/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ features ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ features ---
+[INFO] 
+[INFO] ------------------< org.ruyisdk:org.ruyisdk.feature >-------------------
+[INFO] Building [feature] RuyiSDK IDE Feature 0.0.5-SNAPSHOT            [12/14]
+[INFO]   from features/org.ruyisdk.feature/.polyglot.feature.xml
+[INFO] --------------------------[ eclipse-feature ]---------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ org.ruyisdk.feature ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/features/org.ruyisdk.feature/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ org.ruyisdk.feature ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ org.ruyisdk.feature ---
+[INFO] 
+[INFO] -------------------------< org.ruyisdk:sites >--------------------------
+[INFO] Building [aggregator] sites 0.0.5-SNAPSHOT                       [13/14]
+[INFO]   from sites/.polyglot.pom.tycho
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ sites ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/sites/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ sites ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ sites ---
+[INFO] 
+[INFO] -------------< org.ruyisdk:repository.eclipse-repository >--------------
+[INFO] Building [updatesite] repository.eclipse-repository 0.0.5-SNAPSHOT [14/14]
+[INFO]   from sites/repository/.polyglot.category.xml
+[INFO] -------------------------[ eclipse-repository ]-------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ repository.eclipse-repository ---
+[INFO] Deleting /home/zhouk/Desktop/build2/ruyisdk-eclipse-plugins/sites/repository/target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (default-cli) @ repository.eclipse-repository ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.23.0:validate (default-cli) @ repository.eclipse-repository ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for RuyiSDK Eclipse Plugins 0.0.5-SNAPSHOT:
+[INFO] 
+[INFO] RuyiSDK Eclipse Plugins ............................ SUCCESS [ 12.362 s]
+[INFO] [aggregator] plugins ............................... SUCCESS [  0.305 s]
+[INFO] [bundle] Core ...................................... SUCCESS [  0.252 s]
+[INFO] [bundle] Devices ................................... SUCCESS [  0.108 s]
+[INFO] [bundle] RuyiSDK Intro ............................. SUCCESS [  0.170 s]
+[INFO] [bundle] News ...................................... SUCCESS [  0.179 s]
+[INFO] [bundle] Ruyi ...................................... SUCCESS [  0.154 s]
+[INFO] [bundle] Ruyi SDK Packages ......................... SUCCESS [  0.239 s]
+[INFO] [bundle] RuyiSDK Project Creator ................... SUCCESS [  0.183 s]
+[INFO] [bundle] Ui ........................................ SUCCESS [  0.221 s]
+[INFO] [aggregator] features .............................. SUCCESS [  0.204 s]
+[INFO] [feature] RuyiSDK IDE Feature ...................... SUCCESS [  0.384 s]
+[INFO] [aggregator] sites ................................. SUCCESS [  0.273 s]
+[INFO] [updatesite] repository.eclipse-repository ......... SUCCESS [  0.142 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.511 s
+[INFO] Finished at: 2025-11-24T11:02:20+08:00
+[INFO] ------------------------------------------------------------------------

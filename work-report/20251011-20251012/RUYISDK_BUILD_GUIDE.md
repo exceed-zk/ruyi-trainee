@@ -21,9 +21,6 @@ export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 export MAVEN_HOME=/opt/apache-maven-3.9.9
 export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 
-# 为 Maven 设置内存
-export MAVEN_OPTS="-Xmx2048m"
-
 # 验证版本
 java -version   # 应显示 21.x.x
 mvn -version    # 应显示 3.9.x
@@ -198,25 +195,6 @@ mvn clean verify -Pepp.package.embedcpp -Pepp.materialize-products -DskipTests
 1. 检查网络连接
 2. 验证 SimRel 仓库 URL
 3. 使用 `-U` 强制更新: `mvn clean verify -U`
-
-### 问题：磁盘空间不足
-
-**原因**: 构建需要大量磁盘空间
-
-**解决**:
-1. 清理之前的构建: `mvn clean`
-2. 仅构建需要的平台
-3. 释放磁盘空间
-
-### 问题：内存不足
-
-**原因**: Maven 运行内存不足
-
-**解决**:
-```bash
-export MAVEN_OPTS="-Xmx4096m -XX:MaxPermSize=1024m"
-mvn clean verify
-```
 
 ### 问题：找不到 org.ruyisdk.feature
 

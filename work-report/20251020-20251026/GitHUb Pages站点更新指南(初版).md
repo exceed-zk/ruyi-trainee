@@ -159,35 +159,6 @@ git push origin v0.0.5
 - **稳定阶段**：每月或每季度发布
 - **紧急修复**：随时发布补丁版本
 
-## ❓ 常见问题
-
-### Q: 用户看不到更新？
-**A:** 检查以下几点：
-1. 确认 GitHub Pages 已启用且部署成功
-2. 清除 Eclipse 缓存：删除 `~/.eclipse` 或 `workspace/.metadata/.plugins/org.eclipse.equinox.p2.repository`
-3. 确认版本号确实增加了
-4. 在 Eclipse 中手动添加更新站点 URL
-
-### Q: 更新失败或报错？
-**A:** 可能的原因：
-1. P2 仓库元数据损坏：重新构建并发布
-2. 网络问题：检查防火墙或代理设置
-3. 依赖冲突：检查 feature.xml 中的依赖版本
-
-### Q: 如何回滚到旧版本？
-**A:** 
-1. Eclipse 没有内置回滚功能
-2. 用户需要先卸载当前版本
-3. 然后从旧的 Release 下载安装包离线安装
-4. 或者在仓库中保留历史版本的 P2 站点
-
-### Q: 如何支持多个版本共存？
-**A:** 
-1. 为不同的大版本创建不同的更新站点
-2. 例如：
-   - `https://exceed-zk.github.io/ruyisdk-eclipse-plugins/0.0.x/`
-   - `https://exceed-zk.github.io/ruyisdk-eclipse-plugins/0.1.x/`
-
 ## 🔗 相关资源
 
 - [Eclipse P2 文档](https://help.eclipse.org/latest/topic/org.eclipse.platform.doc.isv/guide/p2_publisher.html)
