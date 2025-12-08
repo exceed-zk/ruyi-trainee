@@ -1,0 +1,9 @@
+继续探索在 VSCode 或 IntelliJ IDEA 上开发 Eclipse 插件的方法。
+- VSCode 插件: https://github.com/testforstephen/vscode-pde
+- IntelliJ IDEA 插件: https://github.com/JaneWardSandy/eclipse-pde-partial-idea
+目标:
+- 支持 Maven 项目。-- 找寻是否有不用添加文件的方案或者说不用修改的方案
+- 提供不基于 AI 大模型的代码补全。-- 由于AI的发展这个反倒难以找到，对于Tabnine的旧版我还不清楚去哪里找到
+- 调试运行 Eclipse 时能查看各线程调用栈和各变量的值。变量包含复杂类型，例如 List。--有这个插件但是不生效很奇怪
+预期成果:
+- 在 plugins 仓库开 PR。PR 的内容是对开发者的简要指导文档，让没用过 Eclipse 的人也能快速开工。
