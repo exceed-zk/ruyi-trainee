@@ -1,0 +1,3 @@
+直接阅读你所使用插件的源码，尝试修复问题并提交代码。
+rebase 本地的分支到最新的 main 上。现在那些 .project 文件就不会被 git 提交上去了。
+intellij idea 和 vscode 是不是都需要一个 target 文件
